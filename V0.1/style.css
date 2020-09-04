@@ -420,6 +420,15 @@ button {
     border-radius: 0 0 29px 29px;
 }
 
+/* Formulaire */
+.form-group
+{
+    background-color: #f3976c;
+    text-align: center;
+    padding: 10px 0px;
+    box-shadow: 2px 0 0 0 #d47a4f;
+}
+
 .form-control {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
@@ -576,7 +585,7 @@ h1, h2, h3, h4, h5, h6, p, label, .btn, a {
     text-align: center;
     font-weight: lighter;
     max-width: 520px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 p {
@@ -585,7 +594,7 @@ p {
 
 .tight-width-whitespace {
     max-width: 600px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 .h1 {
@@ -604,7 +613,7 @@ p {
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 h2 {
@@ -621,7 +630,7 @@ h3 {
 
 .med-width-whitespace {
     max-width: 800px;
-    margin: auto auto auto auto;
+    margin: auto;
     box-shadow: 0px 0px 0px #000000;
 }
 
@@ -678,7 +687,7 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFF!important;
 }
 
 .btn-atomic-tangerine {
