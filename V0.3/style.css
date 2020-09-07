@@ -429,12 +429,10 @@ button {
     align-items:center;
     background-color: #d47a4f;
     padding: 5px 0px;
-/*    border: 2px solid red; */
 }
 
 .form-group
 {
-/*  background-color: #f3976c; */
     text-align: center;
     box-shadow: 2px 0 0 0 #d47a4f;
 }
@@ -763,7 +761,29 @@ h4 {
     font-size: 1.2em;
 }
 
-@media (max-width: 1024px) {
+/* Flex Footer*/
+
+.std
+{
+    display: flex;
+    justify-content: space-around;
+    padding-top:15px;
+}
+
+.responsive
+{
+    display: none;
+}
+
+@media (min-width: 1090px) {
+    .responsive
+    {
+        display: none;
+    }
+}
+
+@media (max-width: 1089px) {
+
     .bloc {
         padding-left: 20px;
         padding-right: 20px;
@@ -772,26 +792,25 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
+
+    .responsive
+    {
+        display: none;
+    }
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
     .navbar .nav {
         max-width: 80%
     }
+    
     .nav-center.navbar .nav {
         max-width: 100%
     }
-}
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-    .b-parallax {
-        background-attachment: scroll;
-    }
-}
-
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
-    .b-parallax {
-        background-attachment: scroll;
+    .responsive
+    {
+        display: none;
     }
 }
 
@@ -818,6 +837,11 @@ h4 {
         padding: 0 20px;
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
+    }
+
+    .responsive
+    {
+        display: none;
     }
 }
 
@@ -944,6 +968,26 @@ h4 {
         width: 180px;
         height: 320px;
     }
+
+    .bloc-mob-center-text {
+        text-align: center;
+    }
+
+    /* Flex Footer*/
+    .responsive
+    {
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items:center;
+        padding: 10px 0px;
+    }
+
+    .std
+    {
+        display:none;
+    }
 }
 
 @media (max-width: 400px) {
@@ -951,10 +995,26 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
+
+    .std
+    {
+        display:none;
+    }
 }
 
-@media (max-width: 767px) {
-    .bloc-mob-center-text {
-        text-align: center;
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .b-parallax {
+        background-attachment: scroll;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .b-parallax {
+        background-attachment: scroll;
+    }
+
+    .responsive
+    {
+        display: none;
     }
 }
