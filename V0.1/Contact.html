@@ -13,18 +13,18 @@
 		<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
 		
 		<script src="./js/jquery-2.1.0.min.js"></script>
-		<script src="./js/bootstrapm.min.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
 		<script src="./js/blocs.min.js"></script>
-		<script src="./js/jqBootstrapValidation.js"></script>
-		<script src="./js/formHandler.js"></script>
-		
-		<title>La chouette agence - Nous contacter </title>
+		<script src="./js/jquery.touchSwipe.min.js" defer></script>
+		<script src="./js/gmaps.min.js"></script>
+
+		<title>La chouette agence</title>
 
 		
 	<!-- Analytics -->
 	<meta name="google-site-verification" content="CeDSqxpPGE7P0clvhLXSJpTJjpEEsHPoIuFKejOPUHs" />
 	<!-- Analytics END -->
-
+		
 	</head>
 	<body>
 		<!-- Principal conteneur -->
@@ -52,6 +52,21 @@
 			</div>
 			<!-- bloc-0 END -->
 
+			<!-- bloc-1-presentation -->
+			<div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax" id="bloc-1-hero">
+				<div class="container bloc-lg">
+					<div class="row tight-width-whitespace">
+						<div class="col-sm-12">
+							<img src="img/logo.png" class="center-block image-resize-mode" width="100" alt="La chouette agence, agence web paris, création logo paris" />
+							<h1 class="text-center hero-bloc-text tc-white ">
+								La chouette agence.
+							</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- bloc-1-presentation END -->
+
 			<!-- bloc-6 -->
 			<div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
 				<div class="container bloc-lg">
@@ -74,7 +89,7 @@
 			<div class="bloc bgc-white l-bloc" id="bloc-7">
 				<div class="container bloc-lg">
 					<div class="row">
-						<div class="col-sm-6">
+						<div class="col-sm-6 Flex">
 							<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 								<div class="form-group">
 									<label>
@@ -105,13 +120,6 @@
 								</button>
 							</form>
 						</div>
-						<div class="col-sm-6">
-							<p>
-								contact@lachouetteagence.com<br>
-								2 place Sathonay 69001 Lyon<br>
-								Ouvert de 9h à 18h, du lundi au vendredi<br>
-							</p>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -121,45 +129,75 @@
 			<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
 			<!-- ScrollToTop Button END-->
 
+		</div>
+		<!-- Principal conteneur END -->
+		
+		<!-- Footer - bloc-8 -->
+		<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+			<div class="container bloc-sm">
+				<div class="row">
+					<div class="col-sm-12">
+						<p class="text-center white">
+							La chouette agence - Agence web basée à Lyon.<br>
+							2 place Sathonay 69001 Lyon<br>
+							Ouvert de 9h à 18h, du lundi au vendredi<br><br>
+						</p>
+						<div class="row row-no-gutters social">
+							<div class="col-sm-3">
+								<div class="text-center">
+									<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="text-center">
+									<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="text-center">
+									<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="text-center">
+									<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								Partenaires
+								<ul>
+									<li><a href="voiture.com">voiture.com</a></li>
+									<li><a href="pizza.com">pizza.com</a></li>
+									<li><a href="matoiture.com">matoiture.com</a></li>
+									<li><a href="immobilierseo.com">immobilierseo.com</a></li>
+								</ul>		
+							</div>
+							<div class="col-sm-4">
+								Annuaires
+								<ul>
+									<li><a href="annuaireagence.com">annuaireagence.com</a></li>
+									<li><a href="annuaireseo.com">annuaireseo.com</a></li>
+									<li><a href="annuairemarketing.com">annuairemarketing.com</a></li>
+									<li><a href="annuairewordpress.com">annuairewordpress.com</a></li>
+								</ul>
+							</div>
 
-			<!-- Footer - bloc-8 -->
-			<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
-				<div class="container bloc-sm">
-					<div class="row">
-						<div class="col-sm-12">
-							<p class="text-center white">
-								La chouette agence - Agence web basée à Lyon.<br>
-							</p>
-							<div class="row row-no-gutters social">
-								<div class="col-sm-3">
-									<div class="text-center">
-										<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="text-center">
-										<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="text-center">
-										<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="text-center">
-										<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
-									</div>
-								</div>
+							<div class="col-sm-4">
+								Annuaires
+								<ul>
+									<li><a href="listeagence.com">listeagence.com</a></li>
+									<li><a href="meilleuresagencesparis.com">meilleuresagencesparis.com</a></li>
+									<li><a href="listeseo.com">listeseo.com</a></li>
+								</ul>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- Footer - bloc-8 END -->
-
 		</div>
-		<!-- Principal conteneur END -->
+		<!-- Footer - bloc-8 END -->
 
 	</body>
 </html>

@@ -421,11 +421,21 @@ button {
 }
 
 /* Formulaire */
+.Flex
+{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: #d47a4f;
+    padding: 5px 0px;
+/*    border: 2px solid red; */
+}
+
 .form-group
 {
-    background-color: #f3976c;
+/*  background-color: #f3976c; */
     text-align: center;
-    padding: 10px 0px;
     box-shadow: 2px 0 0 0 #d47a4f;
 }
 
@@ -735,6 +745,22 @@ h4 {
 
 .bg-presentation {
     background-image: url("img/image-de-presentation.jpg");
+}
+
+/* Recommandation */
+.Recommandation-Italic
+{
+    font-style: italic;
+}
+
+.Uppercase
+{
+    text-transform:uppercase;
+}
+
+.FontSize
+{
+    font-size: 1.2em;
 }
 
 @media (max-width: 1024px) {
