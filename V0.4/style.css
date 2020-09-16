@@ -11,6 +11,7 @@ a,
 button {
     transition: all .3s ease-in-out;
     outline: none!important;
+    color:#383838;
 }
 
 a:hover {
@@ -258,6 +259,36 @@ a:hover {
 
 .nav > li a:hover, .nav > li a:focus {
     background: transparent;
+}
+
+/* Accessibilité Formulaire */
+
+label
+{
+    font-size: 15px;
+    color:black;
+    font-weight: bold;
+}
+a{
+    font-weight: bold;
+}
+
+input, textarea {
+    font-size: 15px;
+    color:black; 
+    font-weight: bold;
+}
+
+a:focus-within {
+    font-weight: bold;
+    border: 3px solid red;
+    text-decoration: none;
+}
+
+input:focus-within, textarea:focus-within, button:focus-within {
+    font-weight: bold;
+    color: #b6b422;
+    background-color:green;
 }
 
 .navbar-toggle {
@@ -532,8 +563,8 @@ a[data-lightbox]:hover img {
 
 h1, h2, h3, h4, h5, h6, p, label, .btn, a {
     font-family: "helvetica";
-    font-weight: 400;
-    color: #575757!important;
+    font-weight: bold;
+    color: #3a3a3a!important;
 }
 
 .container {
@@ -583,7 +614,13 @@ p {
 
 .social {
     max-width: 400px;
+    color:#333333;
     margin: auto;
+}
+
+.fa
+{
+    color:#333333;
 }
 
 h2 {
@@ -622,6 +659,8 @@ h4 {
 }
 
 .darkgrey {
+    font-size: 13px;
+    font-weight:bold;
     color: #333333!important;
 }
 
