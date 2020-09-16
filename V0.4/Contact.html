@@ -89,28 +89,28 @@
 						<div class="col-sm-6 Flex">
 							<form action="includes/form_1.php" id="form_1">
 								<div class="form-group">
-									<label>
+									<label for="name">
 										Nom <br/>
 									</label>
-									<input id="name" class="form-control" required /><br/><br/>
+									<input type="text" name="name" id="name" class="form-control" required /><br/><br/>
 								</div>
 								<div class="form-group">
-									<label>
+									<label for="email">
 										Adresse email <br/>
 									</label>
-									<input id="email" class="form-control" type="email" required /><br/><br/>
+									<input class="form-control" type="email" name="email" id="email" required /><br/><br/>
 								</div>
 								<div class="form-group">
-									<label>
+									<label for="source">
 										Comment nous avez-vous connu ? <br/>
 									</label>
-									<input class="form-control" type="email" required id="input_504" /> <br/><br/>
+									<input class="form-control" type="text" name="source" id="source" required id="input_504" /> <br/><br/>
 								</div>
 								<div class="form-group">
-									<label>
+									<label for="message">
 										Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
 									</label>
-									<textarea id="message" class="form-control" rows="4" cols="50" required></textarea><br/>
+									<textarea class="form-control" type="text" name="message" id="message" rows="4" cols="50" required></textarea><br/>
 								</div> 
 								<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 									Envoyer
