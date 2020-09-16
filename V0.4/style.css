@@ -703,6 +703,11 @@ h4 {
     color: #FFF!important;
 }
 
+.tc-black
+{
+    color: black !important;
+}
+
 .btn-atomic-tangerine {
     background: #F3976C;
     color: #383838!important;
